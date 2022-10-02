@@ -49,18 +49,25 @@ int main(void)
         // 5-1. 더한 수가 10이상일 경우 carry = 1 저장 후, 다음 자리 수 연산 때 carry 값 반영
         // 5-2. 더한 수가 10미만일 경우, 그대로 반영
         int digit = (sum[i] + numAValue + numBValue) % 10;
-        int carry = sum[i] + numAValue + numBValue >= 10? 1 : 0;
+        int carry = sum[i] + numAValue + numBValue >= 10 ? 1 : 0;
 
         sum[i] = digit;
         // 5-3. 자리 위치가 마지막일 때는 연산 결과 그대로 반영
-        sum[i] += minLength == maxLength && i == minLength - 1? carry * 10 : carry;
+        if (minLength == maxLength && i == minLength - 1)
+        {
+            sum[i] += carry * 10;
+        }
+        else
+        {
+            sum[i + 1] += sum[i + 1] + carry;
+        }
     }
 
     // 6. 입력 받은 두수의 길이가 다를 경우, 남은 자리 수 만큼 덧셈 계산
     for (int i = minLength; i < maxLength; i++)
-    { 
-        sum[i] += numStrALength < numStrBLength? numB[maxLength - 1 - i] : numA[maxLength - 1 - i];
-       
+    {
+        sum[i] += numStrALength < numStrBLength ? numB[maxLength - 1 - i] : numA[maxLength - 1 - i];
+
         if (sum[i] >= 10 && i != maxLength - 1)
         {
             sum[i] = sum[i] % 10;
@@ -75,5 +82,5 @@ int main(void)
         printf("%d", sum[maxLength - 1 - i]);
     }
 
-     printf("\n");
+    printf("\n");
 }
