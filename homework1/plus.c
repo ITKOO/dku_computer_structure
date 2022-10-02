@@ -1,3 +1,13 @@
+/**
+ * @file plus.c
+ * @author Jiwon Koo
+ * @brief 큰수의 덧셈연산을 수행하는 프로그램
+ * @version 0.1
+ * @date 2022-10-02
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
 #include <stdio.h>
 #include <string.h>
 #define ARRAY_SIZE 15001
