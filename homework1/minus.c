@@ -4,9 +4,9 @@
  * @brief 큰수의 뺄셈연산을 수행하는 프로그램
  * @version 0.1
  * @date 2022-10-02
- * 
+ *
  * @copyright Copyright (c) 2022
- * 
+ *
  */
 #include <stdio.h>
 #include <string.h>
@@ -59,7 +59,7 @@ int main(void)
         // 5-1. 뺀 수가 0보다 작을 경우  10에서 값 뺀 후, carry = -1 저장
         // 5-2. 뺀 수가 0 이상일경우, 그대로 반영
         int digit = (sum[i] + numAValue - numBValue) % 10;
-        digit = digit < 0 ?  10 + digit : digit;
+        digit = digit < 0 ? 10 + digit : digit;
         int carry = sum[i] + numAValue - numBValue < 0 ? -1 : 0;
 
         sum[i] = digit;
@@ -79,7 +79,6 @@ int main(void)
     {
         sum[i] += numStrALength < numStrBLength ? numB[maxLength - 1 - i] : numA[maxLength - 1 - i];
 
-    
         if (sum[i] < 0 && i != maxLength - 1)
         {
             sum[i] += 10;
@@ -91,11 +90,11 @@ int main(void)
     printf("결과 값 : ");
     for (int i = 0; i < maxLength; i++)
     {
-        // 1000 - 1 의 경우처럼 맨 앞 0 생략 처리 
-        if(i == 0 && sum[maxLength - 1 - i] == 0)
+        // 1000 - 1 의 경우처럼 맨 앞 0 생략 처리
+        if (i == 0 && sum[maxLength - 1 - i] == 0)
             continue;
 
-        printf("%d", sum[maxLength - 1 - i]);  
+        printf("%d", sum[maxLength - 1 - i]);
     }
 
     printf("\n");
