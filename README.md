@@ -9,3 +9,9 @@
 
 <a href="https://github.com/ITKOO/dku_computer_structure/tree/main/homework2"><b>2. [과제 2] Machine-level programming(~10/30)</b></a><br>
 RISC-V instruction set simulator를 이용하여 insertion sort를 구현
+
+&nbsp;&nbsp;&nbsp;<a href="https://github.com/ITKOO/dku_computer_structure/blob/main/homework2/Spike(ISS)-%EA%B0%9C%EB%85%90.md">1. Spike(ISS) 개념</a><br>
+&nbsp;&nbsp;&nbsp;<a href="https://github.com/ITKOO/dku_computer_structure/blob/main/homework2/Spike(ISS)-%ED%99%98%EA%B2%BD%EC%84%B8%ED%8C%85.md">2. Spike(ISS) 환경세팅</a><br>
+&nbsp;&nbsp;&nbsp;<a href="https://github.com/ITKOO/dku_computer_structure/blob/main/homework2/Spike(ISS)-InsertionSort.md">3. Spike(ISS) 를 통한 삽입정렬 코드 실행</a><br>
+&nbsp;&nbsp;&nbsp;<a href="https://github.com/ITKOO/dku_computer_structure/blob/main/homework2/insertionSort.c">4. 삽입정렬 코드</a><br>
+
