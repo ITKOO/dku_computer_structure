@@ -1,6 +1,4 @@
-# [과제 2] Machine-level programming
-
-## Spike(ISS) - 개념
+# Spike(ISS) - 개념
 
 ### 1) Instruction Set Simulator란?
 
