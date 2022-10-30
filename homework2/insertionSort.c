@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define MAX_SIZE 10
 void printArray(char *title, int list[], int listSize);
-void insertionSort(int list[], int n);
+void insertionSort(int list[], int listSize);
 
 int main()
 {
